@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_101b918f110ad313fb6ff2dbfc5ed7ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_101b918f110ad313fb6ff2dbfc5ed7ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_101b918f110ad313fb6ff2dbfc5ed7ae = L.map(
+                "map_101b918f110ad313fb6ff2dbfc5ed7ae",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0599bf815f04a4bceed0f2753b166836 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0599bf815f04a4bceed0f2753b166836.addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var marker_f7726f8bd68b43db5a79ee63aff5282a = L.marker(
+                [37.5984958012818, 127.063534965389],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_c1bb6cca417c74bbfa0210f761b6217f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f7726f8bd68b43db5a79ee63aff5282a.bindTooltip(
+                `<div>
+                     
+        <b>[동대문구 이문아이파크자이]<b><br>
+        - 공급유형(m2): 33<br>
+        - 공급구분: 청년(소득있음)<br>
+        - 공급호수(우선/일반): 12/12<br>
+        - 임대보증금(계약금20%): 71,400,000<br>
+        - 월임대료: 302,000<br>
+        - 소유구분: 서울특별시<br>
+        - 주소: 서울특별시 동대문구 이문동 149-8<br>
+        - 입주시작(예정): 2025.12 이후<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7726f8bd68b43db5a79ee63aff5282a.setIcon(icon_c1bb6cca417c74bbfa0210f761b6217f);
+            
+    
+            var marker_944843906ad46b5ccbd3dcb3781d1e82 = L.marker(
+                [37.6027640054814, 127.075560229011],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_7451f10c5eaeca16e89783137c511eae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_944843906ad46b5ccbd3dcb3781d1e82.bindTooltip(
+                `<div>
+                     
+        <b>[중랑구 리버센 SK뷰 롯데캐슬]<b><br>
+        - 공급유형(m2): 39<br>
+        - 공급구분: 신혼부부<br>
+        - 공급호수(우선/일반): 4/4<br>
+        - 임대보증금(계약금20%): 100,800,000<br>
+        - 월임대료: 377,000<br>
+        - 소유구분: 서울특별시<br>
+        - 주소: 서울시 중랑구 중랑천로 200<br>
+        - 입주시작(예정): 2025.12 이후<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_944843906ad46b5ccbd3dcb3781d1e82.setIcon(icon_7451f10c5eaeca16e89783137c511eae);
+            
+    
+            var marker_9295b95d1ef2e20048e798b9ade75a9d = L.marker(
+                [37.5574405229047, 127.16967893433],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_93800f8ecfc8246ba5dcb2a34e8d1bd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9295b95d1ef2e20048e798b9ade75a9d.bindTooltip(
+                `<div>
+                     
+        <b>[강동구 고덕센트럴푸르지오]<b><br>
+        - 공급유형(m2): 40<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 12<br>
+        - 임대보증금(계약금20%): 104,800,000원<br>
+        - 월임대료: 332,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 강동구 고덕로 399<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9295b95d1ef2e20048e798b9ade75a9d.setIcon(icon_93800f8ecfc8246ba5dcb2a34e8d1bd1);
+            
+    
+            var marker_459d2c47034944d34ce3ea1ffd6a661b = L.marker(
+                [37.6169370292441, 127.034610388171],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_5add4ccae57dbf2024ef06b195f7f810 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_459d2c47034944d34ce3ea1ffd6a661b.bindTooltip(
+                `<div>
+                     
+        <b>[강북구 꿈의숲 효성해링턴플레이스]<b><br>
+        - 공급유형(m2): 49<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 4<br>
+        - 임대보증금(계약금20%): 100,000,000원<br>
+        - 월임대료: 409,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 강북구 오현로 45<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_459d2c47034944d34ce3ea1ffd6a661b.setIcon(icon_5add4ccae57dbf2024ef06b195f7f810);
+            
+    
+            var marker_e21450a1ca33835338382a69513f111d = L.marker(
+                [37.571005283099, 126.808641305119],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_8a1905fe5e9ab1072c0e2fdd0c573c92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e21450a1ca33835338382a69513f111d.bindTooltip(
+                `<div>
+                     
+        <b>[강서구 신마곡 벽산블루밍]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 6<br>
+        - 임대보증금(계약금20%): 152,800,000원<br>
+        - 월임대료: 535,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 강서구 양천로10길 38<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e21450a1ca33835338382a69513f111d.setIcon(icon_8a1905fe5e9ab1072c0e2fdd0c573c92);
+            
+    
+            var marker_1deed1a337298ca755185d2a7cf6f5e0 = L.marker(
+                [37.4760030858366, 126.842316036524],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_b25820b353469a1755c1bce63ff9a0fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1deed1a337298ca755185d2a7cf6f5e0.bindTooltip(
+                `<div>
+                     
+        <b>[구로구 천왕이펜하우스8단지]<b><br>
+        - 공급유형(m2): 45<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 4/5<br>
+        - 예비입주자: 9<br>
+        - 임대보증금(계약금20%): 87,200,000원<br>
+        - 월임대료: 327,000원<br>
+        - 소유구분: SH자체건설<br>
+        - 주소: 서울특별시 구로구 금오로 882<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1deed1a337298ca755185d2a7cf6f5e0.setIcon(icon_b25820b353469a1755c1bce63ff9a0fb);
+            
+    
+            var marker_d6d2363ac4c09c367f08dd8af3727d68 = L.marker(
+                [37.5051267076885, 126.857360185143],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_f10a47d90a8e635b7be44c14533104ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d6d2363ac4c09c367f08dd8af3727d68.bindTooltip(
+                `<div>
+                     
+        <b>[구로구 고척리본타운]<b><br>
+        - 공급유형(m2): 45<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 2/3<br>
+        - 예비입주자: 5<br>
+        - 임대보증금(계약금20%): 88,800,000원<br>
+        - 월임대료: 362,000원<br>
+        - 소유구분: SH자체건설<br>
+        - 주소: 서울특별시 구로구 고척로52나길 25 고척리본타운<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6d2363ac4c09c367f08dd8af3727d68.setIcon(icon_f10a47d90a8e635b7be44c14533104ac);
+            
+    
+            var marker_aa5af706ddc36dd89bcc46356d8cdd6e = L.marker(
+                [37.6648844221816, 127.061972684908],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_9e6335dcd1fa3856f1d246392d1d1540 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_aa5af706ddc36dd89bcc46356d8cdd6e.bindTooltip(
+                `<div>
+                     
+        <b>[노원구 포레나노원]<b><br>
+        - 공급유형(m2): 49<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 2/2<br>
+        - 예비입주자: 2<br>
+        - 임대보증금(계약금20%): 109,600,000원<br>
+        - 월임대료: 430,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 노원구 노원로38길 76 <br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa5af706ddc36dd89bcc46356d8cdd6e.setIcon(icon_9e6335dcd1fa3856f1d246392d1d1540);
+            
+    
+            var marker_c509c5b5374ef5f43399e1af4a5646cd = L.marker(
+                [37.4878281721514, 126.973484900483],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_61ef735ac7bb4a1c3a1180977e4f4194 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c509c5b5374ef5f43399e1af4a5646cd.bindTooltip(
+                `<div>
+                     
+        <b>[동작구 래미안 로이파크]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 1/2<br>
+        - 예비입주자: 3<br>
+        - 임대보증금(계약금20%): 176,800,000원<br>
+        - 월임대료: 648,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 동작구 사당로23길 112<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c509c5b5374ef5f43399e1af4a5646cd.setIcon(icon_61ef735ac7bb4a1c3a1180977e4f4194);
+            
+    
+            var marker_fca909fd635a45336e78a9bd3a6265d8 = L.marker(
+                [37.4934155954909, 127.026491405544],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_b7a8d8f89b22c545e17f3e21baccad7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fca909fd635a45336e78a9bd3a6265d8.bindTooltip(
+                `<div>
+                     
+        <b>[서초구 래미안서초에스티지S]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 3/4<br>
+        - 예비입주자: 10<br>
+        - 임대보증금(계약금20%): 205,600,000원<br>
+        - 월임대료: 789,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 서초구 서운로 104 <br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fca909fd635a45336e78a9bd3a6265d8.setIcon(icon_b7a8d8f89b22c545e17f3e21baccad7c);
+            
+    
+            var marker_743e3458c35cbfcb23cba525b9bf1450 = L.marker(
+                [37.5101374243916, 127.008362411803],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_bc5c113f1ed80a03a1078f777d2e70f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_743e3458c35cbfcb23cba525b9bf1450.bindTooltip(
+                `<div>
+                     
+        <b>[서초구 신반포자이]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 8<br>
+        - 임대보증금(계약금20%): 219,200,000원<br>
+        - 월임대료: 840,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 서초구 잠원동 160<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_743e3458c35cbfcb23cba525b9bf1450.setIcon(icon_bc5c113f1ed80a03a1078f777d2e70f6);
+            
+    
+            var marker_e0bd4f7530dd76c8400a11ceb7f15584 = L.marker(
+                [37.5179454350578, 127.014055654587],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_512f1512246be75dc5cd2a318653d879 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e0bd4f7530dd76c8400a11ceb7f15584.bindTooltip(
+                `<div>
+                     
+        <b>[서초구 래미안 신반포 리오센트]<b><br>
+        - 공급유형(m2): 48<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 4<br>
+        - 임대보증금(계약금20%): 174,400,000원<br>
+        - 월임대료: 667,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 서초구 잠원로14길 32<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0bd4f7530dd76c8400a11ceb7f15584.setIcon(icon_512f1512246be75dc5cd2a318653d879);
+            
+    
+            var marker_6d2f257c3656d4d92661a862a10eb877 = L.marker(
+                [37.4893225494193, 127.024591003338],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_c92f7a8bec20eee44e6e3fcbad4ee94c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6d2f257c3656d4d92661a862a10eb877.bindTooltip(
+                `<div>
+                     
+        <b>[서초구 서초그랑자이]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 8/8<br>
+        - 예비입주자: 6<br>
+        - 임대보증금(계약금20%): 220,000,000원<br>
+        - 월임대료: 844,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 서초구 효령로 391<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d2f257c3656d4d92661a862a10eb877.setIcon(icon_c92f7a8bec20eee44e6e3fcbad4ee94c);
+            
+    
+            var marker_1e472560f8845ca88fb915ac4a009ffb = L.marker(
+                [37.6099259937222, 127.015458405282],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_5f39ab08961752d61dd9db20798e6793 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1e472560f8845ca88fb915ac4a009ffb.bindTooltip(
+                `<div>
+                     
+        <b>[성북구 롯데캐슬 골든힐스]<b><br>
+        - 공급유형(m2): 59<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 2<br>
+        - 임대보증금(계약금20%): 136,800,000원<br>
+        - 월임대료: 523,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 성북구 서경로 60<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e472560f8845ca88fb915ac4a009ffb.setIcon(icon_5f39ab08961752d61dd9db20798e6793);
+            
+    
+            var marker_7d54849c4a88167d5dae8a10fc706a7b = L.marker(
+                [37.4976145695004, 127.102531804188],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_b93d829e850df9895984524243a3c098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7d54849c4a88167d5dae8a10fc706a7b.bindTooltip(
+                `<div>
+                     
+        <b>[송파구 송파헬리오시티]<b><br>
+        - 공급유형(m2): 39<br>
+        - 공급구분: 청년(소득있음)<br>
+        - 금회입주자(우선/일반): 20/20<br>
+        - 예비입주자: 80<br>
+        - 임대보증금(계약금20%): 123,120,000원<br>
+        - 월임대료: 431,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 송파구 송파대로 345<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d54849c4a88167d5dae8a10fc706a7b.setIcon(icon_b93d829e850df9895984524243a3c098);
+            
+    
+            var marker_73799f411b96bbd6420704dcaa6f5675 = L.marker(
+                [37.4976145695004, 127.102531804188],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_e923e39fcafb6dba91f700cf3bb5c458 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_73799f411b96bbd6420704dcaa6f5675.bindTooltip(
+                `<div>
+                     
+        <b>[송파구 송파헬리오시티]<b><br>
+        - 공급유형(m2): 49<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 20/20<br>
+        - 예비입주자: 80<br>
+        - 임대보증금(계약금20%): 136,800,000원<br>
+        - 월임대료: 479,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 송파구 송파대로 345<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73799f411b96bbd6420704dcaa6f5675.setIcon(icon_e923e39fcafb6dba91f700cf3bb5c458);
+            
+    
+            var marker_2691dfe328d1279cdc04807147b1e064 = L.marker(
+                [37.5167222313891, 126.837522789251],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_b5561fa25802ae82caa11838cd19c8bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2691dfe328d1279cdc04807147b1e064.bindTooltip(
+                `<div>
+                     
+        <b>[양천구 신목동비바힐스]<b><br>
+        - 공급유형(m2): 58<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 2<br>
+        - 임대보증금(계약금20%): 128,800,000원<br>
+        - 월임대료: 516,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 양천구 신월로 123<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2691dfe328d1279cdc04807147b1e064.setIcon(icon_b5561fa25802ae82caa11838cd19c8bd);
+            
+    
+            var marker_deb13e111a1f86d0183f9cd9902c07d8 = L.marker(
+                [37.5304831048862, 126.902812773342],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_329b8437f49b2df66b669e1ce7332863 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_deb13e111a1f86d0183f9cd9902c07d8.bindTooltip(
+                `<div>
+                     
+        <b>[영등포구 당산센트럴아이파크]<b><br>
+        - 공급유형(m2): 46<br>
+        - 공급구분: 신혼부부<br>
+        - 금회입주자(우선/일반): 0/0<br>
+        - 예비입주자: 4<br>
+        - 임대보증금(계약금20%): 135,200,000원<br>
+        - 월임대료: 506,000원<br>
+        - 소유구분: 서울시매입<br>
+        - 주소: 서울시 영등포구 영신로 247<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_deb13e111a1f86d0183f9cd9902c07d8.setIcon(icon_329b8437f49b2df66b669e1ce7332863);
+            
+    
+            var marker_53996ebfddda63e016af4b427228ec15 = L.marker(
+                [37.6170001495716, 127.093117583409],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_24731e0da5c2f4da390f73031a1790c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_53996ebfddda63e016af4b427228ec15.bindTooltip(
+                `<div>
+                     
+        <b>[중랑구 신내 글로리움]<b><br>
+        - 공급유형(m2): 36<br>
+        - 공급구분: 청년(소득있음)<br>
+        - 금회입주자(우선/일반): 10/10<br>
+        - 예비입주자: 15<br>
+        - 임대보증금(계약금20%): 67,680,000원<br>
+        - 월임대료: 259,000원<br>
+        - 소유구분: SH자체건설<br>
+        - 주소: 서울시 중랑구 신내로 208<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53996ebfddda63e016af4b427228ec15.setIcon(icon_24731e0da5c2f4da390f73031a1790c6);
+            
+    
+            var marker_7d67800291505f46c77b92a82c277228 = L.marker(
+                [37.6169216250193, 127.11108471141],
+                {
+}
+            ).addTo(map_101b918f110ad313fb6ff2dbfc5ed7ae);
+        
+    
+            var icon_f5e067bf9f6b8a135f59826dc55820e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7d67800291505f46c77b92a82c277228.bindTooltip(
+                `<div>
+                     
+        <b>[중랑구 신내3-4 도시형생활주택]<b><br>
+        - 공급유형(m2): 31<br>
+        - 공급구분: 청년(소득있음)<br>
+        - 금회입주자(우선/일반): 12/13<br>
+        - 예비입주자: 15<br>
+        - 임대보증금(계약금20%): 50,320,000원<br>
+        - 월임대료: 205,000원<br>
+        - 소유구분: SH자체건설<br>
+        - 주소: 서울시 중랑구 신내역로 160<br>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d67800291505f46c77b92a82c277228.setIcon(icon_f5e067bf9f6b8a135f59826dc55820e9);
+            
+</script>
+</html>
